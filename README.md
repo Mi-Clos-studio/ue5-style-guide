@@ -993,7 +993,7 @@ Because of this, all transient variables should always be initialized as zero or
 <a name="bp-vars-config"></a>
 #### 3.2.8 Config Variables
 
-Do not use the `Config Variable` flag. This makes it harder for designers to control blueprint behavior. Config variables should only be used in C++ for rarely changed variables. Think of them as `Advanced Advanced Display` variables.
+Use the `Config Variable` flag only when you want to expose a variable in a build to the dev team or a handful of users. This can be used to enable (non-critical) developer features, or to give a new "hidden" option to a few users during a debugging process.
 
 <a name="3.3"></a>
 <a name="bp-functions"></a>
