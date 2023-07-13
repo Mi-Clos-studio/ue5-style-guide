@@ -780,7 +780,7 @@ The words `variable` and `property` may be used interchangeably.
 <a name="bp-var-naming-nouns"></a>
 ##### 3.2.1.1 Nouns
 
-All non-boolean variable names must be clear, unambiguous, and descriptive nouns.
+All variable names must be clear, unambiguous, and descriptive nouns.
 
 <a name="3.2.1.2"></a>
 <a name="bp-var-naming-case"></a>
@@ -802,11 +802,7 @@ All non-boolean variables should be in the form of [PascalCase](#terms-cases).
 <a name="bp-var-bool-prefix"></a>
 ##### 3.2.1.3 Boolean `b` Prefix
 
-All booleans should be named in PascalCase but prefixed with a lowercase `b`.
-
-Example: Use `bDead` and `bEvil`, **not** `Dead` and `Evil`.
-
-UE4 Blueprint editors know not to include the `b` in user-friendly displays of the variable.
+Boolean variable names should not be an exception and thus should not use the "b" prefix (contrary to usual UE guidelines).
 
 <a name="3.2.1.4"></a>
 <a name="bp-var-bool-names"></a>
@@ -817,18 +813,18 @@ UE4 Blueprint editors know not to include the `b` in user-friendly displays of t
 
 All booleans should be named as descriptive adjectives when possible if representing general information. Do not include words that phrase the variable as a question, such as `Is`. This is reserved for functions.
 
-Example: Use `bDead` and `bHostile` **not** `bIsDead` and `bIsHostile`.
+Example: Use `Dead` and `Hostile` **not** `IsDead` and `IsHostile`.
 
-Try to not use verbs such as `bRunning`. Verbs tend to lead to complex states.
+Try to not use verbs such as `Running`. Verbs tend to lead to complex states.
 
 <a name="3.2.1.4.2"></a>
 ###### 3.2.1.4.2 Complex States
 
 Do not to use booleans to represent complex and/or dependent states. This makes state adding and removing complex and no longer easily readable. Use an enumeration instead.
 
-Example: When defining a weapon, do **not** use `bReloading` and `bEquipping` if a weapon can't be both reloading and equipping. Define an enumeration named `EWeaponState` and use a variable with this type named `WeaponState` instead. This makes it far easier to add new states to weapons.
+Example: When defining a weapon, do **not** use `Reloading` and `Equipping` if a weapon can't be both reloading and equipping. Define an enumeration named `EWeaponState` and use a variable with this type named `WeaponState` instead. This makes it far easier to add new states to weapons.
 
-Example: Do **not** use `bRunning` if you also need `bWalking` or `bSprinting`. This should be defined as an enumeration with clearly defined state names.
+Example: Do **not** use `Running` if you also need `Walking` or `Sprinting`. This should be defined as an enumeration with clearly defined state names.
 
 <a name="3.2.1.5"></a>
 <a name="bp-vars-naming-context"></a>
