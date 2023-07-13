@@ -1328,9 +1328,11 @@ This section will focus on Level assets and their internals.
 
 > 6.2 [Lighting Should Be Built](#levels-lighting-should-be-built)
 
-> 6.3 [No Player Visible Z Fighting](#evels-no-visible-z-fighting)
+> 6.3 [No Player Visible Z Fighting](#levels-no-visible-z-fighting)
 
-> 6.4 [Marketplace Specific Rules](#evels-levels-mp-rules)
+> 6.4 [Marketplace Specific Rules](#levels-mp-rules)
+
+> 6.5 [Never Use The Level Blueprint](#levels-no-level-blueprint)
 
 <a name="6.1"></a>
 <a name="levels-no-errors-or-warnings"></a>
@@ -1379,6 +1381,12 @@ If your project contains assets that should be demoed or come with some sort of 
 If your project is a gameplay mechanic or other form of system as opposed to an art pack, this can be the same as your "Overview" map.
 
 For example, `InteractionComponent_Overview_Demo`, `ExplosionKit_Demo`.
+
+<a name="6.5"></a>
+<a name="levels-no-level-blueprint"></a>
+### 6.5 Never Use The Level Blueprint
+
+You should never put any code in a Level Blueprint: it is stored in the same file as the rest of the level (.umap), making it difficult to work on the code while others work on the level itself.
 
 **[⬆ Back to Top](#table-of-contents)**
 
