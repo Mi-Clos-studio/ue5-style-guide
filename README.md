@@ -173,6 +173,8 @@ Naming conventions should be treated as law. A project that conforms to a naming
 
 Most things are prefixed with prefixes being generally an acronym of the asset type followed by an underscore.
 
+Everything must be written in english.
+
 <a name="base-asset-name"></a>
 <a name="1.1"></a>
 ### 1.1 Base Asset Name - `Prefix_BaseAssetName_Variant_Suffix`
