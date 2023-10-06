@@ -248,6 +248,8 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 
 > 1.2.12 [Effects](#anc-effects)
 
+> 1.2.13 [Dialogues](#anc-dialogues)
+
 <a name="anc-common"></a>
 <a name="1.2.1"></a>
 #### 1.2.1 Most Common
@@ -455,6 +457,14 @@ Packing 4 channels of data into a texture (RGBA) is not recommended except for a
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | Particle System         | PS_        |            |                                  |
 | Material (Post Process) | PP_        |            |                                  |
+
+<a name="anc-dialogue"></a>
+<a name="1.2.13"></a>
+### 1.2.13 Dialogues
+
+| Asset Type              | Prefix     | Suffix     | Notes                            |
+| ----------------------- | ---------- | ---------- | -------------------------------- |
+| Dialogue                | DLG_       |            |                                  |
 
 **[⬆ Back to Top](#table-of-contents)**
 
